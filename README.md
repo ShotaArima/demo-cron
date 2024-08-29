@@ -16,9 +16,10 @@
     # シェルスクリプトであれば sh になります。
     # ***のところで毎分実行の設定をしている
     
-    * * * * * /usr/bin/php [上で作成したファイルのパス]/sample.php
-    * * * * * /usr/bin/php [上で作成したファイルのパス]/sample.php `date '+\%Y\%m\%d\%H\%M\%S'`
-    ```
+   * * * * * /opt/homebrew/Cellar/php/8.3.8/bin/php {pwd}/sample.php
+   * * * * * /opt/homebrew/Cellar/php/8.3.8/bin/php {pwd}/sample.php `date '+\%Y\%m\%d\%H\%M\%S'`
+
+   ```
 3. 登録しているcronの確認
     ```bash
       crontab -l
